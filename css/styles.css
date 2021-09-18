@@ -130,7 +130,7 @@ h3 {
 }
 
 .header__search {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     height: 24px;
     background: transparent;
     border: none;
@@ -155,7 +155,7 @@ h3 {
     width: auto;
     height: 621px;
     background-size: cover;
-    background-image: url('/11/img/low-angle-photo-of-balconies-2462015\ 1.jpg');
+    background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 1.jpg');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -229,9 +229,10 @@ h3 {
     width: 50%;
     /* height: 622px; */
     /* flex: 1 1 44%; */
-    background-image: url('/11/img/Rectangle\ 2.jpg');
+    background-image: url('/Git/img/Rectangle\ 2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     margin-right: 30px;
 }
 
@@ -293,11 +294,11 @@ h3 {
 }
 
 .about-us-block:nth-child(1) {
-    background-image: url('/11/img/about-us-2.svg');
+    background-image: url('/Git/img/about-us-2.svg');
 }
 
 .about-us-block:nth-child(2) {
-    background-image: url('/11/img/about-us-1.svg');
+    background-image: url('/Git/img/about-us-1.svg');
 }
 
 .about-us-block:not(:last-child) {
@@ -510,20 +511,21 @@ h3 {
     height: 50px;
     top: 25%;
     right: 0;
-    background-image: url('/11/img/+х.svg');
+    background-image: url('/Git/img/+х.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    transition: 0.5s all ease;
+    transition: 0.2s all ease;
 }
 
 .question-item:hover:before,
 .question-item:focus:before {
-    background-image: url('/11/img/+х-hover.svg');
+    background-image: url('/Git/img/+х-hover.svg');
 }
 
 .question-item:active:before {
-    background-image: url('/11/img/+х-active.svg');
+    background-image: url('/Git/img/+х.svg');
+    transform: rotate(45deg);
 }
 
 .question__btn:hover {
@@ -800,7 +802,7 @@ h3 {
     }
 
     .header__search {
-        padding-right: 20px;
+        /* padding-right: 20px; */
     }
 
     .about-us-card-content {
@@ -920,7 +922,7 @@ h3 {
     .header-container {
         max-width: 768px;
         height: 69px;
-        margin: 0 15px;
+        /* margin: 0 15px; */
         justify-content: space-between;
         align-items: center;
     }
