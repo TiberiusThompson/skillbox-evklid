@@ -157,6 +157,7 @@ h3 {
     background-size: cover;
     background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 1.jpg');
     background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     padding: 102px 80px 100px 80px;
@@ -345,8 +346,8 @@ h3 {
 
 /* our_work */
 
-.our_work {
-    margin-bottom: 100px;
+.our-work {
+    margin-bottom: 94px;
 }
 
 .our-work-section__heading {
@@ -534,7 +535,7 @@ h3 {
 
 .question-item:hover {
     border-top: 1px solid #FF9900;
-    border-bottom: 1px solid #FF9900; 
+    border-bottom: 1px solid #FF9900;
 }
 
 /* footer */
@@ -655,7 +656,7 @@ h3 {
     margin-bottom: 25px;
     padding: 14px 24px;
     color: #fff;
-    transition: 0.3s all ease; 
+    transition: 0.3s all ease;
 }
 
 .footer-form__item:hover,
@@ -676,7 +677,7 @@ h3 {
     display: flex;
 }
 
-.footer_btn {
+.footer__btn {
     background-color: var(--special-color);
     border: none;
     padding: 19px 52px;
@@ -687,12 +688,12 @@ h3 {
     margin-right: 22px;
 }
 
-.footer_btn:hover,
-.footer_btn:focus {
+.footer__btn:hover,
+.footer__btn:focus {
     background-color: #FF9900B2;
 }
 
-.footer_btn:active {
+.footer__btn:active {
     background-color: #E1670E;
 }
 
@@ -809,10 +810,6 @@ h3 {
         padding: 20px 20px;
     }
 
-    .about-us-block__heading {
-        white-space: normal;
-    }
-
     .our-work-desc {
         flex: 1 1 50% !important;
     }
@@ -833,6 +830,10 @@ h3 {
 
 @media (max-width: 1024px) {
 
+    .section__heading {
+        margin-left: 0;
+    }
+
     /* .container {
         max-width: 1024px;
     } */
@@ -843,7 +844,11 @@ h3 {
 
     .header-logo {
         height: 48px;
-        width: 150px;
+        width: 159px;
+    }
+
+    .header-logo__icon {
+        padding-right: 8px;
     }
 
     .header__nav {
@@ -852,14 +857,46 @@ h3 {
 
     .header__burger {
         display: block;
+        padding-bottom: 25px;
+    }
+
+    .special-offer {
+        margin-bottom: 80px;
     }
 
     .special-offer__content {
         width: 100%;
+        padding: 160px 77px;
+        height: 668px;
+        background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 1\ \(1\).jpg');
+    }
+
+    .special-offer__heading {
+        max-width: 770px;
+        font-size: 60px;
+        line-height: 73px;
+        margin-bottom: 16px;
+    }
+
+    .special-offer__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .special-offer__button {
+        margin-top: 60px;
+    }
+
+    .about-us {
+        margin-bottom: 81px;
+    }
+
+    .about-us__heading {
+        margin-bottom: 11px;
     }
 
     .about-us__text {
-        padding-right: 20px;
+        margin-bottom: 61px;
     }
 
     .about-us-content {
@@ -875,21 +912,55 @@ h3 {
 
     .about-us-block {
         width: 200%;
+        padding: 65px 155px 61px 317px;
+        background-position: 10.4% 50%;
     }
 
     .about-us-content {
         flex-direction: column;
     }
 
+    .about-us-card-content {
+        padding: 48px 50px;
+    }
+
+    .our-work {
+        margin-bottom: 80px;
+    }
+
+    .our-work-desc {
+        margin-right: 50px;
+    }
+
     .our-work-img-block__img {
         max-width: 437px;
     }
 
+    .our-work__text {
+        margin-bottom: 21px;
+    }
+
+    .question {
+        margin-bottom: 80px;
+    }
+
+    .section-question__heading {
+        margin-bottom: 32px;
+    }
+
+    .question-item:nth-child(2n) {
+        padding: 7px 0;
+    }
+
     .question__btn {
         white-space: normal;
-        max-width: 756px;
+        max-width: 788px;
         font-size: 20px;
         line-height: 32px;
+    }
+
+    .footer-container {
+        padding: 50px 48px;
     }
 
     .footer-info {
@@ -904,8 +975,18 @@ h3 {
         flex: 1 1 38%;
     }
 
+    .footer__btn {
+        padding: 19px 37.5px;
+        margin-right: 20px;
+    }
+
+    .footer__checkbox-label {
+        padding-top: 2px;
+    }
+
     .footer-form {
         flex: 1 1 58%;
+        max-width: 543px;
     }
 
 }
@@ -963,6 +1044,7 @@ h3 {
     .about-us-block__heading {
         font-size: 24px;
         line-height: 29.26px;
+        white-space: normal;
     }
 
     .about-us-block__text {
@@ -976,6 +1058,10 @@ h3 {
 
     .our-work-item {
         margin: 0;
+    }
+
+    .our-work__text {
+        width: 200%;
     }
 
     .our-work-content {
@@ -995,8 +1081,6 @@ h3 {
         max-width: 570px;
         white-space: normal;
     }
-
-    .question__btn::before {}
 
     .footer-container {
         flex-direction: column-reverse;
@@ -1109,6 +1193,8 @@ h3 {
         padding: 0;
         padding-top: 61px;
         border: none;
+        background-size: 64px 49px;
+        background-position: 0 0;
     }
 
     .about-us-block__heading {
@@ -1162,7 +1248,6 @@ h3 {
         font-size: 14px;
         line-height: 28px;
         max-width: none;
-        width: 200%;
         margin-bottom: 16px;
     }
 
@@ -1220,7 +1305,7 @@ h3 {
         justify-content: center;
     }
 
-    .footer_btn {
+    .footer__btn {
         margin: 0 auto;
         margin-bottom: 11px;
         padding: 12px 32px;
@@ -1252,6 +1337,7 @@ h3 {
 
 
 }
+
 /* 
 @media (max-width: 1921px) {
     .header-container {
