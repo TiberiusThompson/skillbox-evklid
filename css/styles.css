@@ -321,21 +321,25 @@ h3 {
 
 .about-us-card-320px__img {
     display: none;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-image: url('/Git/img/Rectangle\ 2.jpg');
+    background-position: center center;
+    background-size: cover;
+    min-width: 290px;
+    min-height: 200px;
+    margin-bottom: 8px;
 }
 
 .about-us-card-320px__text {
     display: none;
     font-size: 14px;
-    line-height: 26px;
-    margin-bottom: 19px;
+    line-height: 28px;
+    margin-bottom: 11px;
 }
 
 .about-us-card-320px__button {
     display: none;
-    padding: 11px 45px;
+    padding: 11px 15px;
+    max-width: 56%;
     border: 2px solid var(--special-color);
     font-weight: 700;
     font-size: 12px;
@@ -654,7 +658,7 @@ h3 {
     min-height: 60px;
     margin-bottom: 25px;
     padding: 14px 24px;
-    color: #fff;
+    color: #CACACA;
     transition: 0.3s all ease;
 }
 
@@ -1197,9 +1201,22 @@ h3 {
         padding: 0 15px;
     }
 
+    .header__burger {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     .header-logo {
         height: 35px;
-        width: 110px;
+        width: 117px;
+    }
+
+    .header-logo__icon {
+        padding-right: 7px;
+    }
+
+    .header__search {
+        padding-bottom: 0;
     }
 
     .special-offer {
@@ -1207,20 +1224,24 @@ h3 {
     }
 
     .special-offer__content {
-        padding: 60px 21.5px;
+        padding: 60px 24px;
         height: 308px;
         align-items: center;
+        background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 14.jpg');
     }
 
     .special-offer__heading {
         font-size: 20px;
         line-height: 24.38px;
+        text-align: center;
+        margin-bottom: 6px;
     }
 
     .special-offer__text {
         font-size: 12px;
-        line-height: 14.63px;
-        margin-bottom: 32px;
+        line-height: 16px;
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     .special-offer__button {
@@ -1228,17 +1249,23 @@ h3 {
         height: 40px;
         font-size: 12px;
         line-height: 14.63px;
+        margin: 0;
         padding: 14px 27px;
+        align-self: center;
     }
 
     .about-us {
-        margin-bottom: 60px;
+        margin-bottom: 58px;
+    }
+
+    .about-us__heading {
+        margin-bottom: 20px;
     }
 
     .about-us__text {
         font-size: 14px;
-        line-height: 26px;
-        margin-bottom: 8px;
+        line-height: 28px;
+        margin-bottom: 14px;
     }
 
     .about-us-card {
@@ -1266,8 +1293,20 @@ h3 {
         padding: 0;
         padding-top: 61px;
         border: none;
-        background-size: 64px 49px;
+        background-size: 64px;
         background-position: 0 0;
+    }
+
+    .about-us-block:nth-child(1) {
+        background-image: url('/Git/img/about-us-img\ 320px\ 1.svg');
+    }
+
+    .about-us-block:nth-child(2) {
+        background-image: url('/Git/img/about-us-img\ 320px\ 2.svg');
+    }
+
+    .about-us-block:not(:last-child) {
+        margin-bottom: 30px;
     }
 
     .about-us-block__heading {
@@ -1283,12 +1322,21 @@ h3 {
         line-height: 28px;
     }
 
+    .our-work {
+        margin-bottom: 60px;
+    }
+
     .our-work-desc {
         margin: 0;
     }
 
-    .our-work-section__heading {
+    .our-work-img-block__img {
+        height: 160px;
         margin-bottom: 16px;
+    }
+
+    .our-work-section__heading {
+        margin-bottom: 21px;
     }
 
     .our-work-list {
@@ -1321,37 +1369,54 @@ h3 {
         font-size: 14px;
         line-height: 28px;
         max-width: none;
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
 
     .our-work-btn__more {
-        padding: 13.5px 46px;
+        padding: 13px 44px;
+        max-height: 40px;
         font-size: 12px;
         line-height: 15px;
         margin-right: 10px;
     }
 
     .our-work-btn__contract {
-        padding: 13.5px 29.5px;
+        padding: 13px 31.5px;
         font-size: 12px;
         line-height: 15px;
+        max-height: 40px;
+    }
+
+    .question {
+        margin-bottom: 60px;
+    }
+
+    .section-question__heading {
+        margin-bottom: 16px;
     }
 
     .question-item {
-        padding: 30px 0;
-
+        padding: 29.65px 0 !important;
     }
 
     .question-item::before {
         width: 30px;
         height: 30px;
+        top: 36%
     }
 
     .question__btn {
-        max-width: 243px;
+        padding-right: 20px;
+        max-width: 270px;
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
+        height: auto;
+    }
+
+    .question__btn:nth-child(4),
+    .question__btn:nth-child(5) {
+        max-width: 261px !important;
     }
 
     .footer-container {
@@ -1360,17 +1425,30 @@ h3 {
 
     .footer-contacts {
         margin: 0 auto;
+        margin-right: 49px;
     }
 
     .footer-form {
         border-bottom: 1px solid #CACACA;
-        margin-bottom: 25px;
-        padding-bottom: 25px;
+        margin-bottom: 16px;
+        padding-bottom: 15px;
     }
 
     .footer-form__heading {
         font-size: 24px;
         line-height: 29px;
+        margin-bottom: 21px;
+    }
+
+    .footer-form__item {
+        font-size: 14px;
+        line-height: 32px;
+        padding-left: 20px;
+    }
+
+    .footer-form_item_end {
+        padding-top: 14px;
+        margin-bottom: 25px;
     }
 
     .footer-form-submit-block {
@@ -1381,7 +1459,7 @@ h3 {
     .footer__btn {
         margin: 0 auto;
         margin-bottom: 11px;
-        padding: 12px 32px;
+        padding: 12px 28px;
         font-size: 12px;
         line-height: 15px;
     }
@@ -1390,16 +1468,36 @@ h3 {
         margin: 0 auto;
     }
 
+    .footer__checkbox-label {
+        font-size: 16px;
+        line-height: 32px;
+        padding-left: 24px;
+    }
+
+    .footer__checkbox-label::before {
+        top: 26%;
+        left: 2%;
+    }
+
+    .footer__checkbox-label::after {
+        top: 28%;
+        left: 3.6%;
+    }
+
     .footer__logo {
-        width: 131px;
-        height: 42px;
-        object-fit: cover;
         margin: 0 auto;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
+    }
+
+    .footer__logo_img {
+        max-width: 131px;
+        max-height: 42px;
+        object-fit: cover;b
     }
 
     .footer-contacts__item {
         margin: 0;
+        margin-right: -4px;
     }
 
     .footer__icon {
