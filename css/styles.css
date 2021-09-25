@@ -147,20 +147,76 @@ h3 {
 
 /* spacial offer */
 
+.swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* .swiper-wrapper {
+    z-index: -1;
+} */
+
+.swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.swiper-slide_first {
+    background-image: url('/Git/img/special-offer-1\(1920\).jpg');
+}
+
+.swiper-slide_second {
+    background-image: url('/Git/img/special-offer-2\(1920\).jpg');
+}
+
+.swiper-slide_third {
+    background-image: url('/Git/img/special-offer-3\(1920\).jpg');
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin-right: 20px !important;
+    background-color: var(--white-color);
+    opacity: 0.4;
+}
+
+.swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--white-color);
+    opacity: 1;
+}
+
+.swiper-pagination {
+    z-index: 10;
+}
+
 .special-offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
+    height: 620px;
 }
 
 .special-offer__content {
+    display: flex;
     width: auto;
-    height: 621px;
-    background-size: cover;
-    background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 1.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
+    height: 85.5%;
     display: flex;
     flex-direction: column;
-    padding: 102px 80px 100px 80px;
+    padding: 102px 80px 0 80px;
+    z-index: 10;
+    background-color: transparent;
 }
 
 .special-offer__heading {
@@ -393,8 +449,12 @@ h3 {
 }
 
 .our-work-content {
-    display: flex;
+    display: none;
     justify-content: space-between;
+}
+
+.our-work-content-active {
+    display: flex;
 }
 
 .our-work-img-block__img {
@@ -871,7 +931,6 @@ h3 {
         width: 100%;
         padding: 160px 77px;
         height: 668px;
-        background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 1\ \(1\).jpg');
     }
 
     .special-offer__heading {
@@ -1040,7 +1099,6 @@ h3 {
 
     .special-offer__content {
         background-position: center center;
-        background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 13.jpg');
         height: 662px;
         padding: 161px 40px;
     }
@@ -1227,7 +1285,6 @@ h3 {
         padding: 60px 24px;
         height: 308px;
         align-items: center;
-        background-image: url('/Git/img/low-angle-photo-of-balconies-2462015\ 14.jpg');
     }
 
     .special-offer__heading {

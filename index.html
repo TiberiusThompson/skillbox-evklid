@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Евклид жопа</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/Git/css/normalize.css">
     <link rel="stylesheet" href="/Git/css/styles.css">
 </head>
@@ -38,6 +40,14 @@
                     проектантов
                 </p>
                 <a href="" class="special-offer__button">Заказать расчёт</a>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide_first"></div>
+                    <div class="swiper-slide swiper-slide_second"></div>
+                    <div class="swiper-slide swiper-slide_third"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -98,19 +108,19 @@
             </h2>
             <ul class="our-work-list">
                 <li class="our-work-item">
-                    <button class="our-work-item__btn">1 шаг</button>
+                    <button class="our-work-item__btn" data-path="one">1 шаг</button>
                 </li>
                 <li class="our-work-item">
-                    <button class="our-work-item__btn">2 шаг</button>
+                    <button class="our-work-item__btn" data-path="two">2 шаг</button>
                 </li>
                 <li class="our-work-item">
-                    <button class="our-work-item__btn">3 шаг</button>
+                    <button class="our-work-item__btn" data-path="three">3 шаг</button>
                 </li>
                 <li class="our-work-item">
-                    <button class="our-work-item__btn">4 шаг</button>
+                    <button class="our-work-item__btn" data-path="four">4 шаг</button>
                 </li>
             </ul>
-            <div class="our-work-content">
+            <div class="our-work-content our-work-content-active" data-target="one">
                 <div class="our-work-desc">
                     <h3 class="our-work__heading">
                         Проводим консультацию
@@ -137,6 +147,27 @@
                 </div>
                 <img src="/11/img/our-work-image.jpg" alt="sosi" class="our-work-img-block__img">
             </div>
+            <div class="our-work-content our-work-content-active" data-target="two">
+                <div class="our-work-desc">
+                    <h3 class="our-work__heading">
+                        Проводим консультацию
+                    </h3>
+                    <p class="our-work__text text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa laborum, saepe corporis rerum
+                        atque ipsum voluptas enim omnis. Facilis, commodi repellat? Illo aliquid possimus fuga
+                        voluptatibus quo et ex qui.
+                    </p>
+                    <div class="our-work-buttons">
+                        <button class="our-work-btn__more">
+                            Подробнее
+                        </button>
+                        <button class="our-work-btn__contract">
+                            Договор
+                        </button>
+                    </div>
+                </div>
+                <img src="/11/img/our-work-image.jpg" alt="sosi" class="our-work-img-block__img">
+            </div>
         </section>
 
         <section class="question">
@@ -145,7 +176,7 @@
                 <li class="question-item">
                     <button class="question__btn">
                         Из чего формируется конечная стоимость проекта?
-                    </button>    
+                    </button>
                 <li class="question-item">
                     <button class="question__btn">
                         У меня есть свой проект. Сможем ли мы его доработать <span class="slash">/</span> реализовать?
@@ -158,8 +189,8 @@
                 </li>
                 <li class="question-item">
                     <button class="question__btn">
-                        Могу ли я делегировать вам работу <span class="slash">/</span> согласование <br> с подрядчиком <span
-                            class="slash">/</span> организацией?
+                        Могу ли я делегировать вам работу <span class="slash">/</span> согласование <br> с подрядчиком
+                        <span class="slash">/</span> организацией?
                     </button>
                 </li>
                 <li class="question-item">
@@ -261,6 +292,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="/Git/js/swiper.js"></script>
+    <script src="/Git/js/tabs.js"></script>
 </body>
 
 </html>
