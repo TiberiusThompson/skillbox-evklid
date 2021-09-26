@@ -43,7 +43,6 @@ h3 {
 
 .container {
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -60,6 +59,10 @@ h3 {
 
 .slash {
     color: #CACACA;
+}
+
+.hd {
+    display: none;
 }
 
 /* header */
@@ -168,15 +171,15 @@ h3 {
 }
 
 .swiper-slide_first {
-    background-image: url('/Git/img/special-offer-1\(1920\).jpg');
+    background-image: url('../img/special-offer-1\(1920\).jpg');
 }
 
 .swiper-slide_second {
-    background-image: url('/Git/img/special-offer-2\(1920\).jpg');
+    background-image: url('../img/special-offer-2\(1920\).jpg');
 }
 
 .swiper-slide_third {
-    background-image: url('/Git/img/special-offer-3\(1920\).jpg');
+    background-image: url('../img/special-offer-3\(1920\).jpg');
 }
 
 .swiper-pagination-bullet {
@@ -286,7 +289,7 @@ h3 {
     width: 50%;
     /* height: 622px; */
     /* flex: 1 1 44%; */
-    background-image: url('/Git/img/Rectangle\ 2.jpg');
+    background-image: url('../img/Rectangle\ 2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -351,11 +354,11 @@ h3 {
 }
 
 .about-us-block:nth-child(1) {
-    background-image: url('/Git/img/about-us-2.svg');
+    background-image: url('../img/about-us-2.svg');
 }
 
 .about-us-block:nth-child(2) {
-    background-image: url('/Git/img/about-us-1.svg');
+    background-image: url('../img/about-us-1.svg');
 }
 
 .about-us-block:not(:last-child) {
@@ -377,7 +380,7 @@ h3 {
 
 .about-us-card-320px__img {
     display: none;
-    background-image: url('/Git/img/Rectangle\ 2.jpg');
+    background-image: url('../img/Rectangle\ 2.jpg');
     background-position: center center;
     background-size: cover;
     min-width: 290px;
@@ -575,7 +578,7 @@ h3 {
     height: 50px;
     top: 25%;
     right: 0;
-    background-image: url('/Git/img/+х.svg');
+    background-image: url('../img/+х.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -584,11 +587,11 @@ h3 {
 
 .question-item:hover:before,
 .question-item:focus:before {
-    background-image: url('/Git/img/+х-hover.svg');
+    background-image: url('../img/+х-hover.svg');
 }
 
 .question-item:active:before {
-    background-image: url('/Git/img/+х.svg');
+    background-image: url('../img/+х.svg');
     transform: rotate(45deg);
 }
 
@@ -873,6 +876,10 @@ h3 {
         padding: 20px 20px;
     }
 
+    .about-us-block__heading {
+        white-space: normal;
+    }
+
     .our-work-desc {
         flex: 1 1 50% !important;
     }
@@ -887,6 +894,11 @@ h3 {
 
     .footer-item {
         max-width: 460px;
+    }
+
+    .footer-info {
+        /* max-width: none; */
+        margin-left: 50px !important;
     }
 
 }
@@ -1355,11 +1367,11 @@ h3 {
     }
 
     .about-us-block:nth-child(1) {
-        background-image: url('/Git/img/about-us-img\ 320px\ 1.svg');
+        background-image: url('../img/about-us-img\ 320px\ 1.svg');
     }
 
     .about-us-block:nth-child(2) {
-        background-image: url('/Git/img/about-us-img\ 320px\ 2.svg');
+        background-image: url('../img/about-us-img\ 320px\ 2.svg');
     }
 
     .about-us-block:not(:last-child) {
@@ -1563,12 +1575,17 @@ h3 {
         object-fit: cover;
     }
 
+    .hd {
+        display: inline;
+    }
 
 }
 
-/* 
-@media (max-width: 1921px) {
-    .header-container {
-        max-width: 1770px;
+
+@media (min-width: 1930px) {
+
+    .container {
+        max-width: 1920px;
     }
-} */
+
+}
