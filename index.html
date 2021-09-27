@@ -10,6 +10,15 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/Git/css/normalize.css">
     <link rel="stylesheet" href="/Git/css/styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
 </head>
 
 <body>
@@ -145,17 +154,20 @@
                         </button>
                     </div>
                 </div>
-                <img src="img/our-work-image.jpg" alt="sosi" class="our-work-img-block__img">
+                <img src="img/our-work-image-1.jpg" alt="sosi" class="our-work-img-block__img">
             </div>
             <div class="our-work-content" data-target="two">
                 <div class="our-work-desc">
                     <h3 class="our-work__heading">
-                        Проводим консультацию
+                        Составляем смету
                     </h3>
                     <p class="our-work__text text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa laborum, saepe corporis rerum
-                        atque ipsum voluptas enim omnis. Facilis, commodi repellat? Illo aliquid possimus fuga
-                        voluptatibus quo et ex qui.
+                        Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных
+                        стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
+                        соответствующими инстанциями. А также представители современных социальных резервов,
+                        инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь
+                        всего лишь частью общей картины, реплицированные с зарубежных источников, современные
+                        исследования подвергнуты целой серии независимых исследований.
                     </p>
                     <div class="our-work-buttons">
                         <button class="our-work-btn__more">
@@ -166,17 +178,86 @@
                         </button>
                     </div>
                 </div>
-                <img src="img/our-work-image.jpg" alt="sosi" class="our-work-img-block__img">
+                <img src="img/our-work-image-2.jpg" alt="sosi" class="our-work-img-block__img">
+            </div>
+            <div class="our-work-content" data-target="three">
+                <div class="our-work-desc">
+                    <h3 class="our-work__heading">
+                        Привлекаем подрядчиков
+                    </h3>
+                    <p class="our-work__text text">
+                        Идейные соображения высшего порядка, а также новая модель организационной деятельности требует
+                        анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей
+                        целевой аудитории является четким доказательством простого факта: высококачественный прототип
+                        будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый
+                        опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы
+                        массового участия. Принимая во внимание показатели успешности, постоянное
+                        информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания
+                        по разработке прогресса профессионального сообщества.
+                    </p>
+                    <div class="our-work-buttons">
+                        <button class="our-work-btn__more">
+                            Подробнее
+                        </button>
+                        <button class="our-work-btn__contract">
+                            Договор
+                        </button>
+                    </div>
+                </div>
+                <img src="img/our-work-image-3.jpg" alt="sosi" class="our-work-img-block__img">
+            </div>
+            <div class="our-work-content" data-target="four">
+                <div class="our-work-desc">
+                    <h3 class="our-work__heading">
+                        Инспектируем все этапы работ
+                    </h3>
+                    <p class="our-work__text text">
+                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
+                        простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших
+                        направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной
+                        деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели
+                        успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                    </p>
+                    <div class="our-work-buttons">
+                        <button class="our-work-btn__more">
+                            Подробнее
+                        </button>
+                        <button class="our-work-btn__contract">
+                            Договор
+                        </button>
+                    </div>
+                </div>
+                <img src="img/our-work-image-4.jpg" alt="sosi" class="our-work-img-block__img">
             </div>
         </section>
 
         <section class="question">
             <h3 class="section__heading section-question__heading">Часто задаваемые вопросы</h3>
-            <ul class="question-list">
+            <ul class="question-list" id="accordion">
                 <li class="question-item">
                     <button class="question__btn">
                         Из чего формируется конечная стоимость проекта?
                     </button>
+                    <div>
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса
+                            призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
+                            верифицированы. Но высококачественный прототип будущего проекта является качественно новой
+                            ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые
+                            представляют собой яркий пример континентально-европейского типа политической культуры,
+                            будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные
+                            признаки победы институционализации призывают нас к новым свершениям, которые, в свою
+                            очередь, должны быть указаны как претенденты на роль ключевых факторов.
+
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
+                            призваны к ответу. Явные признаки победы институционализации набирают популярность среди
+                            определенных слоев населения, а значит, должны быть объединены в целые кластеры себе
+                            подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают
+                            нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно
+                            положительном свете.
+                        </p>
+                    </div>
+                </li>
                 <li class="question-item">
                     <button class="question__btn">
                         У меня есть свой проект. Сможем ли мы его доработать <span class="slash">/</span> реализовать?
@@ -195,7 +276,8 @@
                 </li>
                 <li class="question-item">
                     <button class="question__btn">
-                        Могу ли я вернуть деньги <span class="hd">&nbsp &nbsp &nbsp &nbsp &nbsp</span>на каком-либо из этапов работ?
+                        Могу ли я вернуть деньги <span class="hd">&nbsp &nbsp &nbsp &nbsp &nbsp</span>на каком-либо из
+                        этапов работ?
                     </button>
                 </li>
             </ul>
