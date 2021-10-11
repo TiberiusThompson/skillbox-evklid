@@ -7,18 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Евклид жопа</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion();
-        });
-    </script>
 </head>
 
 <body>
@@ -453,9 +445,28 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+      $( "#accordion" ).accordion({
+        collapsible: true,
+        heightStyle: "content"
+      });
+    } );
+
+    const swiper = new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+    </script>
 </body>
 
 </html>
