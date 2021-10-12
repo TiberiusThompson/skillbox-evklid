@@ -29,8 +29,8 @@
                 <form class="header-search-form">
                     <input type="text" placeholder="Что будем искать?" class="header-search__input">
                 </form> -->
-                <button id="header__search" class="header__search"></button>
-                <!-- <button id="header__close" class="header__close"></button>
+            <button id="header__search" class="header__search"></button>
+            <!-- <button id="header__close" class="header__close"></button>
             </div> -->
         </div>
     </header>
@@ -452,21 +452,19 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $( function() {
-      $( "#accordion" ).accordion({
-        collapsible: true,
-        heightStyle: "content"
-      });
-    } );
-
-    const swiper = new Swiper('.swiper', {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-});
+        const swiper = new Swiper('.swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
     </script>
+     <script>
+        $( function() {
+          $( "#accordion" ).accordion();
+        } );
+        </script>
 </body>
 
 </html>
