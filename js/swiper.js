@@ -9,4 +9,8 @@ const swiper = new Swiper('.swiper', {
       type: 'bullets',
       clickable: true,
     },
+
+    autoplay: {
+      delay: 2500,
+  },
   });

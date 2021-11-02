@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Евклид жопа</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        $( function() {
+          $( "#accordion" ).accordion();
+        } );
+        </script>
 </head>
 
 <body>
@@ -123,7 +128,7 @@
                     <button class="our-work-item__btn" data-path="four">4 шаг</button>
                 </li>
             </ul>
-            <div class="our-work-content" data-target="one">
+            <div class="our-work-content our-work-content-active" data-target="one">
                 <div class="our-work-desc">
                     <h3 class="our-work__heading">
                         Проводим консультацию
@@ -229,10 +234,10 @@
             <h3 class="section__heading section-question__heading">Часто задаваемые вопросы</h3>
             <ul class="question-list" id="accordion">
                 <li class="question-item">
-                    <button class="question__btn">
-                        Из чего формируется конечная стоимость проекта?
-                    </button>
                     <div class="question__content">
+                        <button class="question__btn">
+                            Из чего формируется конечная стоимость проекта?
+                        </button>
                         <p class="text question__text">
                             Являясь всего лишь частью общей картины, непосредственные участники технического прогресса
                             призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
@@ -253,10 +258,10 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <button class="question__btn">
-                        У меня есть свой проект. Сможем ли мы его доработать <span class="slash">/</span> реализовать?
-                    </button>
                     <div class="question__content">
+                        <button class="question__btn">
+                            У меня есть свой проект. Сможем ли мы его доработать <span class="slash">/</span> реализовать?
+                        </button>
                         <p class="text question__text">
                             Являясь всего лишь частью общей картины, непосредственные участники технического прогресса
                             призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
@@ -277,10 +282,10 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <button class="question__btn">
-                        Я выбираю между разными компаниями. В чём ваше отличие?
-                    </button>
                     <div class="question__content">
+                        <button class="question__btn">
+                            Я выбираю между разными компаниями. В чём ваше отличие?
+                        </button>
                         <p class="text question__text">
                             Являясь всего лишь частью общей картины, непосредственные участники технического прогресса
                             призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
@@ -301,11 +306,11 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <button class="question__btn">
-                        Могу ли я делегировать вам работу <span class="slash">/</span> согласование <br> с подрядчиком
-                        <span class="slash">/</span> организацией?
-                    </button>
                     <div class="question__content">
+                        <button class="question__btn">
+                            Могу ли я делегировать вам работу <span class="slash">/</span> согласование <br> с подрядчиком
+                            <span class="slash">/</span> организацией?
+                        </button>
                         <p class="text question__text">
                             Являясь всего лишь частью общей картины, непосредственные участники технического прогресса
                             призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
@@ -326,11 +331,11 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <button class="question__btn">
-                        Могу ли я вернуть деньги <span class="hd">&nbsp &nbsp &nbsp &nbsp &nbsp</span>на каком-либо из
-                        этапов работ?
-                    </button>
                     <div class="question__content">
+                        <button class="question__btn">
+                            Могу ли я вернуть деньги <span class="hd">&nbsp &nbsp &nbsp &nbsp &nbsp</span>на каком-либо из
+                            этапов работ?
+                        </button>
                         <p class="text question__text">
                             Являясь всего лишь частью общей картины, непосредственные участники технического прогресса
                             призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
@@ -424,7 +429,7 @@
                 <form action="" class="footer-form-list">
                     <input type="text" placeholder="Фамилия, имя и отчество*" class="footer-form__item">
                     <input type="email" placeholder="E-mail*" class="footer-form__item">
-                    <textarea readonly placeholder="Сообщение"
+                    <textarea placeholder="Сообщение"
                         class="footer-form__item footer-form_item_end"></textarea>
                     <div class="footer-form-submit-block">
                         <input type="submit" value="Отправить данные" class="footer__btn">
@@ -449,8 +454,8 @@
     <script src="./js/swiper.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             pagination: {
@@ -460,11 +465,6 @@
             },
         });
     </script>
-     <script>
-        $( function() {
-          $( "#accordion" ).accordion();
-        } );
-        </script>
 </body>
 
 </html>
