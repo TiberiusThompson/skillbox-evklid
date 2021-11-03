@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <script>
-        $( function() {
-          $( "#accordion" ).accordion();
-        } );
-        </script>
 </head>
 
 <body>
@@ -234,7 +236,7 @@
             <h3 class="section__heading section-question__heading">Часто задаваемые вопросы</h3>
             <ul class="question-list" id="accordion">
                 <li class="question-item">
-                    <div class="question__content">
+                    <!-- <div class="question__content"> -->
                         <button class="question__btn">
                             Из чего формируется конечная стоимость проекта?
                         </button>
@@ -258,7 +260,7 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <div class="question__content">
+                    <!-- <div class="question__content"> -->
                         <button class="question__btn">
                             У меня есть свой проект. Сможем ли мы его доработать <span class="slash">/</span> реализовать?
                         </button>
@@ -282,7 +284,7 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <div class="question__content">
+                    <!-- <div class="question__content"> -->
                         <button class="question__btn">
                             Я выбираю между разными компаниями. В чём ваше отличие?
                         </button>
@@ -306,7 +308,7 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <div class="question__content">
+                    <!-- <div class="question__content"> -->
                         <button class="question__btn">
                             Могу ли я делегировать вам работу <span class="slash">/</span> согласование <br> с подрядчиком
                             <span class="slash">/</span> организацией?
@@ -331,7 +333,7 @@
                     </div>
                 </li>
                 <li class="question-item">
-                    <div class="question__content">
+                    <!-- <div class="question__content"> -->
                         <button class="question__btn">
                             Могу ли я вернуть деньги <span class="hd">&nbsp &nbsp &nbsp &nbsp &nbsp</span>на каком-либо из
                             этапов работ?
@@ -449,13 +451,19 @@
             </div>
         </div>
     </footer>
+        <!-- <div id="accordion">
+            <h3>1</h3>
+            <p>1</p>
+            <h3>2</h3>
+            <p>2</p>
+            <h3>3</h3>
+            <p>3</p>
+        </div> -->
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             pagination: {
