@@ -175,7 +175,7 @@ h3 {
     border-radius: 16px;
     padding: 18px 12px;
     top: -100px;
-    right: 0;
+    right: 10px;
     display: flex;
     transition: 0.5s all ease-in-out;
 }
@@ -214,6 +214,15 @@ h3 {
 
 .header-search__checkbox:checked ~ .header-search-form {
     top: 20px;
+}
+
+.header-search__checkbox:focus ~ .header-search-form {
+    top: 20px;
+}
+
+.header-search__checkbox:focus+.header-search {
+    outline: 2px solid var(--special-color);
+    outline-offset: 2px;
 }
 
 .header__burger {
@@ -563,6 +572,7 @@ h3 {
     font-size: 18px;
     line-height: 22px;
     transition: 0.3s all ease;
+    cursor: pointer;
 }
 
 .our-work-item__btn:hover {
@@ -570,7 +580,8 @@ h3 {
 }
 
 .our-work-item__btn:focus {
-    outline: 1px solid #FF9900;
+    outline: 2px solid #FF9900;
+    outline-offset: 2px;
 }
 
 /* .our-work-item__btn:active {
@@ -585,6 +596,11 @@ h3 {
     position: absolute;
     opacity: 0;
 }
+
+/* .our-work-checkbox:checked+.our-work-item__btn {
+    outline: 2px solid #E1670E;
+    outline-offset: 2px;
+} */
 
 .our-work-content {
     display: none;
@@ -751,7 +767,7 @@ h3 {
     width: 50px;
     height: 50px;
     top: 25%;
-    right: -3.5%;
+    right: -2.5%;
     transform: translateY(-50%);
     transform: rotate(90deg);
     background-image: url('../img/+х.svg');
@@ -762,12 +778,12 @@ h3 {
     z-index: 10;
 }
 
-.question__btn:hover:before,
-.question__btn:focus:before {
+.question__btn:hover:before {
     background-image: url('../img/+х-hover.svg');
 }
 
-.question__btn:active:before {
+.question__btn:active:before,
+.question__btn:focus:before {
     background-image: url('../img/+х.svg');
     transform: rotate(135deg);
 }
@@ -949,6 +965,11 @@ h3 {
     background-color: #666666;
 }
 
+.footer-form__item:focus {
+    outline: 1px solid var(--special-color);
+    outline-offset: 1px;
+}
+
 .footer-form_item_end {
     padding-top: 29px;
     padding-bottom: 85px;
@@ -956,11 +977,6 @@ h3 {
     max-height: 150px;
     height: 100%;
     resize: none;
-}
-
-.footer-form_item_end:focus {
-    outline: 1px solid var(--special-color);
-    outline-offset: 1px;
 }
 
 .footer-form-submit-block {
@@ -1031,6 +1047,11 @@ h3 {
 
 .footer__checkbox:checked+.footer__checkbox-label::after {
     opacity: 1;
+}
+
+.footer__checkbox:focus+.footer__checkbox-label {
+    outline: 2px solid var(--special-color);
+    outline-offset: 2px;
 }
 
 .footer__checkbox {
@@ -1702,6 +1723,10 @@ h3 {
 
     .header__search {
         padding-bottom: 0;
+    }
+
+    .header-search-form {
+        right: 0;
     }
 
     .header-search__checkbox:checked ~ .header-search-form {
